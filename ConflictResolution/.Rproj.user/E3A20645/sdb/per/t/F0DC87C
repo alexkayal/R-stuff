@@ -1,0 +1,18 @@
+{
+    "contents" : "Frnd <-0; Priv <-0; Saf <-0; Ind <-0; Res <-0;\nfor (i in 1:16) {\n  xA <- data.frame(total[which(total$S.A==i),])\n  xA <- data.frame(xA$Frnd.A, xA$Priv.A, xA$Saf.A, xA$Ind.A, xA$Res.A)\n  colnames(xA)[1] <- \"Frnd\"; colnames(xA)[2] <- \"Priv\";\n  colnames(xA)[3] <- \"Saf\"; colnames(xA)[4] <- \"Ind\";\n  colnames(xA)[5] <- \"Res\";\n  xB <- data.frame(total[which(total$S.B==i),])\n  xB <- data.frame(xB$Frnd.B, xB$Priv.B, xB$Saf.B, xB$Ind.B, xB$Res.B)\n  colnames(xB)[1] <- \"Frnd\"; colnames(xB)[2] <- \"Priv\";\n  colnames(xB)[3] <- \"Saf\"; colnames(xB)[4] <- \"Ind\";\n  colnames(xB)[5] <- \"Res\";\n  x <- rbind(xA,xB)\n  Frnd[i] = mean(x$Frnd);\n  Priv[i] = mean(x$Priv);\n  Saf[i] = mean(x$Saf);\n  Ind[i] = mean(x$Ind);\n  Res[i] = mean(x$Res);\n  Cons <- data.frame(Frnd,Priv,Saf,Ind,Res)\n}\nremove(Frnd,Priv,Saf,Ind,Res)\n\nfor (i in 1:nrow(total)){\n  total$cons.Frnd.A[i] <- Cons$Frnd[total$S.A[i]]\n  total$cons.Frnd.B[i] <- Cons$Frnd[total$S.B[i]]\n  \n  total$cons.Priv.A[i] <- Cons$Priv[total$S.A[i]]\n  total$cons.Priv.B[i] <- Cons$Priv[total$S.B[i]]\n  \n  total$cons.Saf.A[i] <- Cons$Saf[total$S.A[i]]\n  total$cons.Saf.B[i] <- Cons$Saf[total$S.B[i]]\n  \n  total$cons.Ind.A[i] <- Cons$Ind[total$S.A[i]]\n  total$cons.Ind.B[i] <- Cons$Ind[total$S.B[i]]\n  \n  total$cons.Res.A[i] <- Cons$Res[total$S.A[i]]\n  total$cons.Res.B[i] <- Cons$Res[total$S.B[i]]\n  \n}\n\n# pie chart\nj <- 16\nslices <- c(Cons$Frnd[j], Cons$Priv[j], Cons$Saf[j], Cons$Ind[j], Cons$Res[j])\nlbls <- c(\"Friendship\", \"Privacy\", \"Safety\", \"Independence\", \"Responsibility\")\npie(slices, labels = lbls, main=\"Values\")\n",
+    "created" : 1458032181995.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "840020117",
+    "id" : "F0DC87C",
+    "lastKnownWriteTime" : 1455877722,
+    "path" : "~/Documents/Work/R data/J3Official/averageValues.R",
+    "project_path" : "averageValues.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

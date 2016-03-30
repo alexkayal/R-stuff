@@ -1,0 +1,18 @@
+{
+    "contents" : "count =0\nfor (i in 1:nrow(prediction.data)){ \n  \n  if (prediction.data$norm.type[i]==\"obl\" && prediction.data$userPref01[i]==0) {\n    prediction.data$norm_type[i] <- \"obl\"\n  }\n  \n  else if (prediction.data$norm.type[i]==\"proh\" && prediction.data$userPref01[i]==1){\n    prediction.data$norm_type[i] <- \"obl\"\n  }\n  else{\n    prediction.data$norm_type[i] <- \"proh\"\n    count = count +1\n  }\n  }",
+    "created" : 1458136772536.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3981233893",
+    "id" : "5A88BED7",
+    "lastKnownWriteTime" : 1458230912,
+    "path" : "~/Documents/Work/R data/J3Official/normtype count.R",
+    "project_path" : "normtype count.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

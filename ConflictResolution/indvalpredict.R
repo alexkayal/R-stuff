@@ -1,0 +1,5 @@
+Frnd.before = sqrt((total$Frnd.A-total$Frnd.before)^2) - sqrt((total$Frnd.B-total$Frnd.before)^2)
+Priv.before = sqrt((total$Priv.A-total$Priv.before)^2) - sqrt((total$Priv.B-total$Priv.before)^2)
+Saf.before = sqrt((total$Saf.A-total$Saf.before)^2) - sqrt((total$Saf.B-total$Saf.before)^2)
+Ind.before = sqrt((total$Ind.A-total$Ind.before)^2) - sqrt((total$Ind.B-total$Ind.before)^2)
+Res.before = sqrt((total$Res.A-total$Res.before)^2) - sqrt((total$Res.B-total$Res.before)^2)

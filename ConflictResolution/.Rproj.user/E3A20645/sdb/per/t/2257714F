@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1458136070763.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2257714F",
+    "lastKnownWriteTime" : 176093659136,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "u7ornbnp1w",
+        "caption" : "prediction.data",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=prediction.data&cache_key=u7ornbnp1w",
+        "displayedObservations" : 1067,
+        "environment" : "",
+        "object" : "prediction.data",
+        "totalObservations" : 1067,
+        "variables" : 30
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
